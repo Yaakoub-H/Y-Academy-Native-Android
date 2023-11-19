@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:background="#edf2f7">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/CoursesText"
+            style="@style/HeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:text="All Courses"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_shape"
+            android:elevation="10dp"
+            android:hint="Search By Title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CoursesText">
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_search"
+                android:drawableEnd="@drawable/ic_filter"
+                android:drawablePadding="10dp"
+                android:elevation="10dp"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollViewPopular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+            <LinearLayout
+                android:id="@+id/CoursesCategoryLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Category TextViews -->
+                <TextView
+                    style="@style/CategoryText"
+                    android:text="@string/_3d_design" />
+
+                <TextView
+                    style="@style/CategoryText"
+                    android:text="@string/graphic_design" />
+
+                <TextView
+                    style="@style/CategoryText"
+                    android:text="@string/web_development" />
+
+                <TextView
+                    style="@style/CategoryText"
+                    android:text="SEO &amp; Marketing" />
+
+                <TextView
+                    style="@style/CategoryText"
+                    android:text="Finance &amp; Accounting" />
+
+                <TextView
+                    style="@style/CategoryText"
+                    android:text="Personal Development" />
+
+                <TextView
+                    style="@style/CategoryText"
+                    android:text="Artificial Intelligence" />
+                <TextView
+                    style="@style/CategoryText"
+                    android:text="@string/hr_management" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintHeight_default="wrap"
+            android:id="@+id/CoursesRecyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollViewPopular"
+            app:layout_constraintVertical_bias="0.006" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

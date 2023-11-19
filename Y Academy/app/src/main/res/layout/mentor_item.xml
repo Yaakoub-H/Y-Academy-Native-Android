@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/rounded_shape"
+    android:orientation="vertical">
+
+    <!-- First Vertical Item: Image -->
+    <ImageView
+        android:id="@+id/imageCategory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_special_offer_background"
+        android:scaleType="fitXY" />
+    <TextView
+        android:fontFamily="@font/jost_bold"
+        android:gravity="center"
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Yaakoub"
+        android:layout_marginBottom="10dp"/>
+    </LinearLayout>

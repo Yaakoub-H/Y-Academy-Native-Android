@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/menu/bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home1" />
+    <item
+        android:id="@+id/navigation_courses"
+        android:title="Courses"
+        android:icon="@drawable/ic_courses" />
+    <item
+        android:id="@+id/navigation_bookmark"
+        android:title="My Bookmark"
+        android:icon="@drawable/ic_save" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile" />
+
+    <!-- Add more items for other fragments -->
+</menu>

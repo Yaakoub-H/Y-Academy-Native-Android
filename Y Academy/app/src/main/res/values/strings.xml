@@ -1,0 +1,259 @@
+<resources>
+    <string name="app_name" translatable="false">Quiz Application</string>
+    <string name="select_language">Select Language</string>
+    <string name="let_s_play">Let\'s Play!</string>
+    <string name="play_now_and_won">Play now and Won</string>
+    <string name="play_now">Play Now</string>
+    <string name="level_up">Level Up</string>
+    <string name="easy">Easy</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="normal">Normal</string>
+    <string name="hard">Hard</string>
+    <string name="this_will_be_the_question">This will be the question</string>
+    <string name="total_questions">Total questions</string>
+    <string name="restart">Restart</string>
+
+    <string name="passed">Passed</string>
+    <string name="failed">Failed</string>
+
+    <string name="total_question">Total questions: %d</string>
+    <string name="score_message">Score: %d out of %d</string>
+
+
+    <!-- Easy Questions -->
+    <string-array name="easy_questions">
+        <item>What is the capital of France?</item>
+        <item>Which planet is known as the Red Planet?</item>
+        <item>Who wrote the play Romeo and Juliet?</item>
+        <item>Which gas do plants absorb from the atmosphere?</item>
+        <item>What is the largest mammal in the world?</item>
+    </string-array>
+
+    <string-array name="easy_choices_1">
+        <item>Paris</item>
+        <item>London</item>
+        <item>Berlin</item>
+        <item>Madrid</item>
+    </string-array>
+
+    <string-array name="easy_choices_2">
+        <item>Mars</item>
+        <item>Venus</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+    </string-array>
+
+    <string-array name="easy_choices_3">
+        <item>William Shakespeare</item>
+        <item>Charles Dickens</item>
+        <item>Jane Austen</item>
+        <item>Mark Twain</item>
+    </string-array>
+
+    <string-array name="easy_choices_4">
+        <item>Carbon dioxide</item>
+        <item>Oxygen</item>
+        <item>Nitrogen</item>
+        <item>Methane</item>
+    </string-array>
+
+    <string-array name="easy_choices_5">
+        <item>Blue whale</item>
+        <item>African elephant</item>
+        <item>Giraffe</item>
+        <item>Hippopotamus</item>
+    </string-array>
+
+    <string-array name="easy_correct_answers">
+        <item>Paris</item>
+        <item>Mars</item>
+        <item>William Shakespeare</item>
+        <item>Carbon dioxide</item>
+        <item>Blue whale</item>
+    </string-array>
+
+    <!-- Normal Questions -->
+    <string-array name="normal_questions">
+        <item>In which year did World War II end?</item>
+        <item>What is the chemical symbol for gold?</item>
+        <item>Who is known as the Father of Modern Physics?</item>
+        <item>Which planet is closest to the Sun?</item>
+        <item>Which gas makes up the majority of Earth atmosphere?</item>
+    </string-array>
+
+    <string-array name="normal_choices_1">
+        <item>1945</item>
+        <item>1939</item>
+        <item>1955</item>
+        <item>1963</item>
+    </string-array>
+
+    <string-array name="normal_choices_2">
+        <item>Au</item>
+        <item>Ag</item>
+        <item>Fe</item>
+        <item>Hg</item>
+    </string-array>
+
+    <string-array name="normal_choices_3">
+        <item>Albert Einstein</item>
+        <item>Isaac Newton</item>
+        <item>Galileo Galilei</item>
+        <item>Stephen Hawking</item>
+    </string-array>
+
+    <string-array name="normal_choices_4">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+    </string-array>
+
+    <string-array name="normal_choices_5">
+        <item>Nitrogen</item>
+        <item>Oxygen</item>
+        <item>Carbon dioxide</item>
+        <item>Hydrogen</item>
+    </string-array>
+
+    <string-array name="normal_correct_answers">
+        <item>1945</item>
+        <item>Au</item>
+        <item>Albert Einstein</item>
+        <item>Mercury</item>
+        <item>Nitrogen</item>
+    </string-array>
+
+    <!-- Hard Questions -->
+    <string-array name="hard_questions">
+        <item>What is the tallest mountain in the world?</item>
+        <item>Who wrote the novel To Kill a Mockingbird?</item>
+        <item>What is the chemical formula for sulfuric acid?</item>
+        <item>Which element has the atomic number 92?</item>
+        <item>In which year was the United Nations founded?</item>
+    </string-array>
+
+    <string-array name="hard_choices_1">
+        <item>Mount Everest</item>
+        <item>K2</item>
+        <item>Makalu</item>
+        <item>Annapurna</item>
+    </string-array>
+
+    <string-array name="hard_choices_2">
+        <item>Harper Lee</item>
+        <item>F. Scott Fitzgerald</item>
+        <item>Ernest Hemingway</item>
+        <item>George Orwell</item>
+    </string-array>
+
+    <string-array name="hard_choices_3">
+        <item>H2SO4</item>
+        <item>CH4</item>
+        <item>NaCl</item>
+        <item>CO2</item>
+    </string-array>
+
+    <string-array name="hard_choices_4">
+        <item>Uranium</item>
+        <item>Plutonium</item>
+        <item>Radium</item>
+        <item>Thorium</item>
+    </string-array>
+
+    <string-array name="hard_choices_5">
+        <item>1945</item>
+        <item>1950</item>
+        <item>1942</item>
+        <item>1948</item>
+    </string-array>
+
+    <string-array name="hard_correct_answers">
+        <item>Mount Everest</item>
+        <item>Harper Lee</item>
+        <item>H2SO4</item>
+        <item>Uranium</item>
+        <item>1945</item>
+    </string-array>
+
+
+    <string name="sign_hello">HELLO THERE, </string>
+    <string name="sign_welcome">WELCOME BACK</string>
+    <string name="signin_hint">Sign to continue</string>
+    <string name="New_User">New User? Sign Up</string>
+    <string name="Already_user">Already a user? Sign In</string>
+
+    <string name="m_heading">Marketing Quiz</string>
+    <string name="an_heading">Programming Quiz</string>
+    <string name="his_heading">History Quiz</string>
+    <string name="mult_heading">Multimedia Quiz</string>
+    <string name="allknow_heading">All Know. Quiz</string>
+
+    <string name="successfull">You completed your quiz successfully</string>
+    <string name="try_agin">Try harder next time!</string>
+    <string name="genius">Genius!</string>
+    <string name="sad">Feeling Sad?</string>
+    <string name="crying_message">You are not ready for next level. Try Again!</string>
+
+    <!-- CHANGE ADMOB STRINGS HERE-->
+    <string name="admob_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="inter_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="banner_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="about_learn">Learn and have fun with:</string>
+    <string name="app_Name">QuizBox</string>
+    <string name="App_Version">Version 1.0.0</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="enter_your_email">Enter your email to receive a</string>
+    <string name="verification_code">Verification code</string>
+    <string name="email">Email</string>
+    <string name="categories">Categories</string>
+    <string name="welcome">WELCOME,</string>
+    <string name="full_name">Full Name</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="welcome_to_the_quizbox">Welcome to the QuizBox</string>
+    <string name="press_start_to_continue">Press START to continue</string>
+    <string name="start">START</string>
+    <string name="password_hint">Password</string>
+    <string name="user_info">USER INFO</string>
+    <string name="don_t_cry">Don\'t Cry!</string>
+    <string name="twenty_score">20% Score</string>
+    <string name="quiz">Quiz</string>
+    <string name="box">Box</string>
+    <string name="learn_and_upgrade">Learn and Upgrade</string>
+    <string name="try_again">Try Again</string>
+    <string name="choose_your_preferred_level">Choose your preferred Level</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="fifty_score">50% Score</string>
+    <string name="congrats">Congrats!</string>
+    <string name="seventy_score">70% Score</string>
+    <string name="next_level">Next Level</string>
+    <string name="hundred_score">100% Score</string>
+    <string name="question_number_countdown">1/10</string>
+    <string name="share_question">Share Question</string>
+    <string name="next">Next</string>
+    <string name="todo">QuizBox Image</string>
+    <string name="explore_and_enhance_your_skills_with_our_courses">Explore and Enhance your skills with our courses.</string>
+    <string name="welcome_to_e_learning">Welcome to E-Learning</string>
+    <string name="get_started">Get Started</string>
+    <string name="email_login">Email</string>
+    <string name="getting_started">Getting Started.!</string>
+    <string name="let_s_sign_up">Let\'s Sign Up.!</string>
+    <string name="y_academy">Y ACADEMY</string>
+    <string name="let_s_log_in">let\'s Log In .!</string>
+    <string name="create_an_account_to_continue_your_allcourses">Create an Account to Continue your allCourses</string>
+    <string name="log_in_to_you_account_to_continue_your_courses">Log In To You Account to Continue Your Courses!</string>
+    <string name="learn_from_home">Learn From Home</string>
+    <string name="create_an_account_to_explore_our_services">Create An Account To Explore Our Services!</string>
+    <string name="_3d_design">3D Design</string>
+    <string name="graphic_design">Graphic Design</string>
+    <string name="web_development">Web Development</string>
+    <string name="seo_and_marketing">SEO and Marketing</string>
+    <string name="finance_and_accounting">Finance and accounting</string>
+    <string name="personal_development">Personal development</string>
+    <string name="artifical_intelligence">Artifical Intelligence</string>
+    <string name="hr_management">HR Management</string>
+
+
+</resources>

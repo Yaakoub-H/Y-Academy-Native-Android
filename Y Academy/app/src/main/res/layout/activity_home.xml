@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edf2f7"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/usernameHomeID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/jost_bold"
+            android:text="Hi, Ronald A. Martin"
+            android:textColor="#202244"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/logoutIcon"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+
+        <ImageView
+            android:id="@+id/logoutIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_logout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/usernameHomeID"
+            app:layout_constraintBottom_toBottomOf="@id/usernameHomeID"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:fontFamily="@font/mulish_regular"
+        android:text="What Would you like to learn Today? Search Below."
+        android:textColor="#CC545454"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameHomeID" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/rounded_shape"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:elevation="10dp"
+        android:hint="Search For..."
+        app:boxBackgroundMode="outline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_search"
+            android:drawableEnd="@drawable/ic_filter"
+            android:drawablePadding="10dp"
+            android:elevation="10dp"
+            android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- special_offer_layout.xml -->
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/gradient_orange_blue"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <TextView
+            android:id="@+id/discountText"
+            style="@style/SpecialOfferText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25% Off*" />
+
+        <TextView
+            android:id="@+id/specialTitleText"
+            style="@style/SpecialOfferText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Today’s Special" />
+
+        <TextView
+            android:id="@+id/descriptionText"
+            android:fontFamily="@font/mulish_regular"
+            android:fontWeight="800"
+            android:textSize="13sp"
+            android:textColor="#FFFFFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Get a Discount for Every Course Order only Valid for Today.!" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <!-- First TextView (Categories) -->
+        <TextView
+            android:id="@+id/categoriesText"
+            style="@style/HeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categories" />
+
+        <!-- Add space between the two TextViews (You can adjust the width as needed) -->
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Second TextView (See All) -->
+        <TextView
+            android:id="@+id/seeAllText"
+            style="@style/SeeAllText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:id="@+id/categoriesLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Category TextViews -->
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/_3d_design" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/graphic_design" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/web_development" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/seo_and_marketing" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/finance_and_accounting" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/personal_development" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/artifical_intelligence" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/hr_management" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <LinearLayout
+        android:id="@+id/popular_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space">
+
+        <!-- First TextView (Categories) -->
+        <TextView
+            android:id="@+id/popularText"
+            style="@style/HeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/seeAllPopularText"
+            style="@style/SeeAllText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All" />
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewPopular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popular_layout_id">
+
+        <LinearLayout
+            android:id="@+id/PopularLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/_3d_design" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/graphic_design" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/web_development" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="SEO &amp; Marketing" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="Finance &amp; Accounting" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="Personal Development" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="Artificial Intelligence" />
+
+            <TextView
+                style="@style/CategoryText"
+                android:text="@string/hr_management" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=   "0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollViewPopular" />
+
+        <LinearLayout
+            android:id="@+id/mentor_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerView">
+
+            <TextView
+                android:id="@+id/mentorText"
+                style="@style/HeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Mentor" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/seeAllMentorText"
+                style="@style/SeeAllText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="See All" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewMentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mentor_layout_id" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

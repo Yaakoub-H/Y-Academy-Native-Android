@@ -1,0 +1,23 @@
+<!-- res/drawable/round_button_with_arrow.xml -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/round_button_background" />
+
+    <item
+        android:right="10dp"
+        android:gravity="end|center_vertical">
+
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" />
+            <size
+                android:width="40dp"
+                android:height="40dp" />
+        </shape>
+    </item>
+
+    <item
+        android:right="10dp"
+        android:gravity="end|center_vertical"
+        android:drawable="@drawable/ic_arrow" />
+</layer-list>

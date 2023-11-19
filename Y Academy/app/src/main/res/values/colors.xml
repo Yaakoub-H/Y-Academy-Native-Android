@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="aqua_green">#00FFFF</color>
+    <color name="button_blue">#2196F3</color>
+    <color name="dark_blue">#030651</color>
+    <color name="light_blue">#5200FF</color>
+
+    <color name="custom_blue">#0961F5</color>
+    <color name="blue_txt_color">#202244</color>
+    <color name="orange">#FF6B00</color>
+
+    <!--Sign In Colors-->
+
+    <color name="rad_rectangle_color">#7E79CC</color>
+    <color name="signin_txt_color">#F1F0FF</color>
+
+    <color name="header_color">#2133A0</color>
+    <color name="Transparent">#00000000</color>
+    <color name="gra_medium_blue">#2618A8</color>
+</resources>

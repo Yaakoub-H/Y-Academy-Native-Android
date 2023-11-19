@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:background="#edf2f7">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/discountText"
+            style="@style/HeaderText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:text="Get The Course"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:drawableStartCompat="@drawable/ic_arrow_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rounded_shape_white"
+            android:orientation="vertical"
+            android:padding="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/discountText">
+
+            <!-- res/layout/custom_element.xml -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <!-- Left Element -->
+                <TextView
+                    android:id="@+id/textViewCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/mulish_bold"
+                    android:fontWeight="700"
+                    android:text="Graphic Design"
+                    android:textColor="#FF6B00"
+                    android:textSize="12sp" />
+
+                <!-- Right Element -->
+                <TextView
+                    android:id="@+id/ratingTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.2"
+                    android:textSize="14sp"
+                    android:textColor="#202244"
+                    android:fontFamily="@font/mulish_bold"
+                    android:fontWeight="800"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+                <!-- Rightmost Icon -->
+                <ImageView
+                    android:id="@+id/iconImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ic_star"
+                    android:layout_toStartOf="@id/ratingTextView"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/courseNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Design Principles"
+                android:textSize="18sp"
+                android:textColor="#202244"
+                android:fontFamily="@font/jost_bold"
+                android:fontWeight="600"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+              >
+                <ImageView
+                    android:id="@+id/videoIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_video"
+                    android:layout_gravity="center_vertical"/>
+
+                <Space
+                    android:layout_width="6dp"
+                    android:layout_height="0dp"/>
+
+
+                <TextView
+                    android:id="@+id/numberOfClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/course_text"
+                    android:text="42"/>
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/classNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/course_text"
+                    android:text="Class"/>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/course_text"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
+                    android:text="|"/>
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="0dp"/>
+
+                <ImageView
+                    android:id="@+id/hourIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_hour"
+                    android:layout_gravity="center_vertical"/>
+
+
+                <Space
+                    android:layout_width="6dp"
+                    android:layout_height="0dp"/>
+
+                <TextView
+                    android:id="@+id/numberOfHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/course_text"
+                    android:text="30"/>
+
+                <Space
+                    android:layout_width="3dp"
+                    android:layout_height="1dp"/>
+
+                <TextView
+                    android:id="@+id/hoursNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/course_text"
+                    android:text="Hours"/>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/priceTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$28"
+                    android:textSize="21sp"
+                    android:fontFamily="@font/mulish_bold"
+                    android:textStyle="bold"
+                    android:textColor="#0961F5"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:backgroundTint="@color/Transparent"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="About"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/jost_bold"
+                    android:fontWeight="600"
+                    android:textColor="#202244"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Curriculcum"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/jost_bold"
+                    android:fontWeight="600"
+                    android:textColor="#202244"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="17dp"
+                android:id="@+id/textViewDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Graphic Design now a popular profession graphic design by off your career about tantas regiones barbarorum pedibus obiit. Learn the fundamentals of graphic design and unleash your creativity! This comprehensive course covers essential design principles, tools, and techniques. Dive into the world of color theory, typography, layout, and image editing. Gain hands-on experience with industry-standard design software such as Adobe Photoshop and Illustrator. Explore real-world design projects and receive constructive feedback from experienced instructors. Elevate your skills and create stunning visual content for various mediums, including print and digital. Our expert-led classes provide practical insights and tips to help you develop a strong design portfolio. Ready to take your design skills to the next level"
+                android:textSize="13sp"
+                android:lineHeight="19sp"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:fontFamily="@font/mulish_bold"
+                android:fontWeight="700"
+                android:textColor="#A0A4AB"/>
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instructor"
+                android:textSize="18sp"
+                android:fontFamily="@font/jost_bold"
+                android:fontWeight="600"
+                android:textColor="#202244"/>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rounded_special_offer_background"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="image description"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/instructorNameId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="William S. Cunningham"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/jost_bold"
+                        android:fontWeight="600"
+                        android:textColor="#202244"/>
+
+                    <TextView
+                        android:id="@+id/textViewCategoryInstructor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Graphic Design"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/mulish_regular"
+                        android:fontWeight="700"
+                        android:textColor="#545454"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_message" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What You'll Get"
+                android:textSize="18sp"
+                android:fontFamily="@font/jost_bold"
+                android:fontWeight="600"
+                android:textColor="#202244"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_lessons"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/nbOfLessonsId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 Lessons"
+                    style="@style/course_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_device"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Access Mobile, Desktop and TV"
+                    style="@style/course_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_level_diff"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/difficulityLevelId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beginner Level"
+                    style="@style/course_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_audio_book"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audio Book"
+                    style="@style/course_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_lifetime_access"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lifetime Acess"
+                    style="@style/course_text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_100_quizes"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <TextView
+                    android:id="@+id/nbOfQuizezId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 Quizes"
+                    style="@style/course_text" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_certifcate_completion"
+                    android:layout_marginEnd="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Certifcate Of Completion"
+                    style="@style/course_text" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/getStartedBtnId"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_button_background">
+
+                <TextView
+                    android:id="@+id/loginTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/jost_bold"
+                    android:text="Enroll Course - $55"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="16dp"
+                    app:cardBackgroundColor="#FFFFFF"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/arrowImage"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_arrow"
+                        app:tint="#0000FF" />
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
